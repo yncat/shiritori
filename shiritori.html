@@ -1,0 +1,30 @@
+﻿<html>
+
+<head>
+	<meta charset="utf-8">
+	<title> ポケモンしりとり </title>
+	<link rel="stylesheet" type="text/css" href="layout.css">
+</head>
+
+<body bgcolor="white" Text="black" Link="blue" Vlink="red" Alink="lime">
+	<script src="db/pokemon.js"></script>
+	<script src="shiritori.js"></script>
+	<h1>ポケモンしりとり</h1>
+	<form name="startForm">
+		<button type="button" name="gameStartBTN" value="開始" onclick="if(srVerifyDb(database)) srStart(database);">開始</button>
+	</form>
+	<div aria-live="assertive">
+		<h1 id="scoreArea"></h1>
+
+		<h2 id="messageArea"></h2>
+		<p id="instructionArea"></p>
+	</div>
+	<div id="tableArea">
+	</div>
+	<div id="scorePostArea">
+	</div>
+	<hr>
+	<a href="index.php">ゲームをやめる</a>
+</body>
+
+</html>
